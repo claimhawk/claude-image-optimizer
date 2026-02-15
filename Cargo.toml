@@ -1,0 +1,19 @@
+[package]
+name = "imgopt"
+version = "0.0.1"
+edition = "2021"
+authors = ["ClaimHawk"]
+description = "Terminal-based image optimizer for Claude Code - resize images before pasting to save context"
+repository = "https://github.com/claimhawk/imgopt-rs"
+license = "MIT"
+keywords = ["image", "resize", "terminal", "clipboard", "claude"]
+categories = ["command-line-utilities", "multimedia::images"]
+
+[[bin]]
+name = "imgopt"
+path = "src/main.rs"
+
+[dependencies]
+crossterm = "0.28"
+image = "0.25"
+arboard = "3.4"
